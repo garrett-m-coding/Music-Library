@@ -46,5 +46,4 @@ class SongDetail(APIView):
     def delete(self, request, pk):
         song = self.get_object(pk)
         song.delete()
-        return Response(status=status.HTTP_205_NO_CONTENT)
-        
+        return Response(status=status.HTTP_204_NO_CONTENT)
